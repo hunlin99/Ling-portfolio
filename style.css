@@ -1,0 +1,88 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark:#0074E1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    /* 确保 header 在其他元素之上 */
+}
+.home{
+    height: 100vh;
+}
+
+nav ul{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin-left: 1em;
+    list-style: none;
+}
+
+.cover-text-holder{
+    position: relative;
+    top: 60vh;
+    right: 10%;
+    width: 100%;
+}
+
+h1{
+    font-size: 5em;
+}
+h3{
+    font-size: 3em;
+}
+p{
+    font-size: 2.5em;
+}
+h1, h3, p{
+    text-align: end;
+}
+.note{
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.note p{
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+.img-block{
+    background-color: var(--text-color);
+    height: 20em;
+    border-radius: 1em;
+}
+
+.img-holder-1, .img-holder-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 1em;
+}
+.img-holder-1 :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.img-holder-2 :nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+footer{
+    margin-top: 2em;
+    height: 15vh;
+    background-color: var(--text-color);
+}
