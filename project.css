@@ -1,0 +1,31 @@
+.webDesign, .UID, .industrialDesign, .creativeProduct{
+    padding: 3%;
+    margin: 0 auto;
+}
+
+
+.img-block{
+    background-color: black;
+    height: 20em;
+    border-radius: 1em;
+}
+.content-block{
+    background-color: black;
+    height: 20em;
+    border-radius: 1em;
+}
+
+.col-container-1, .col-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 1em;
+}
+.col-container-1 :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.col-container-2 :nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
