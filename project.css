@@ -1,16 +1,36 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark:#0074E1;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .webDesign, .UID, .industrialDesign, .creativeProduct{
     padding: 3%;
     margin: 0 auto;
+    color: var(--text-color);
+}
+nav {
+    width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
 
 .img-block{
-    background-color: black;
+    background-color: var(--text-color);
     height: 20em;
     border-radius: 1em;
 }
 .content-block{
-    background-color: black;
+    background-color: var(--text-color);
     height: 20em;
     border-radius: 1em;
 }

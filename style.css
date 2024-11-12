@@ -10,7 +10,6 @@
 }
 
 header {
-    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,13 +21,23 @@ header {
     height: 100vh;
 }
 
-nav ul{
+nav {
     width: 20%;
-    display: flex;
-    justify-content: space-between;
     padding: 1em;
     margin-left: 1em;
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
 }
 
 .cover-text-holder{
