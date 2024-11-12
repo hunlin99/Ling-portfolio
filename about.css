@@ -25,6 +25,14 @@ nav {
     justify-content: space-between;
     flex-direction: row;
 }
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+    color: var(--footer-text-color);
+}
+
 
 
 header {
