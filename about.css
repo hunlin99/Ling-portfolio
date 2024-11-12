@@ -1,0 +1,91 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark: #0074E1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 85%;
+    margin: auto;
+    padding-top: 10vh;
+    color: var(--text-color);
+}
+nav {
+    width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    /* 确保 header 在其他元素之上 */
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+    align-items: center;
+    width: 100%;
+
+}
+
+.profile-picture {
+    background-color: var(--text-color);
+    height: 30rem;
+    width: 30rem;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.skill-block-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.skill-block {
+    background-color: var(--text-color);
+    height: 20em;
+    border-radius: 1rem;
+}
+
+.background-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 2em;
+}
+
+.bg-content {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    line-height: 2em;
+}
+
+.bg-content ul {
+    padding-left: 2em;
+}
+
+.vertical-line {
+    width: 20px;
+    height: 100%;
+    border-left: solid var(--text-color);
+}

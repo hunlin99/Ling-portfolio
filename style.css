@@ -8,6 +8,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    width: 85%;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+nav {
+    width: 20%;
+    padding: 1em;
+    margin-left: 1em;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
 
 header {
     position: fixed;
@@ -19,16 +35,6 @@ header {
 }
 .home{
     height: 100vh;
-}
-
-nav {
-    width: 20%;
-    padding: 1em;
-    margin-left: 1em;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
 }
 
 

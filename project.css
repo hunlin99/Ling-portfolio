@@ -8,10 +8,10 @@
     margin: 0;
     box-sizing: border-box;
 }
-.webDesign, .UID, .industrialDesign, .creativeProduct{
-    padding: 3%;
-    margin: 0 auto;
-    color: var(--text-color);
+body{
+    width: 85%;
+    margin: auto;
+    padding-top: 10vh;
 }
 nav {
     width: 20%;
@@ -22,6 +22,20 @@ nav {
     justify-content: space-between;
     flex-direction: row;
 }
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    /* 确保 header 在其他元素之上 */
+}
+
+.webDesign, .UID, .industrialDesign, .creativeProduct{
+    padding: 3%;
+    color: var(--text-color);
+}
+
 
 
 .img-block{
