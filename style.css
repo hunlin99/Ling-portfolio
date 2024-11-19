@@ -9,10 +9,19 @@
     box-sizing: border-box;
 }
 body{
-    width: 85%;
-    margin: auto;
+    width: 100%;
+
     padding-top: 10vh;
     color: var(--text-color);
+    background-image: url(./image/1133114_121518-OQ6M5Q-542-02.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+section{
+    margin: auto;
+    width: 85%;
 }
 
 nav {
@@ -35,6 +44,7 @@ a:active {
 
 
 header {
+    padding-left: 2em;
     position: fixed;
     top: 0;
     width: 100%;
@@ -88,6 +98,18 @@ h1, h3, p{
     background-color: var(--text-color);
     height: 20em;
     border-radius: 1em;
+    color: aliceblue;
+}
+.img-block p {
+    position: relative;
+    top: 0.5em;
+    right: 1em;
+}
+.img-block img{
+    object-fit: cover;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
 }
 
 .img-holder-1, .img-holder-2{
@@ -105,8 +127,44 @@ h1, h3, p{
     grid-column-end: 4;
 }
 
-footer{
+.footer{
     margin-top: 2em;
     height: 15vh;
     background-color: var(--text-color);
+    width: 100vw;
+    margin: auto;
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    .img-holder-1, .img-holder-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    .img-holder-1 :first-child {
+        grid-column: auto;
+    }
+    .img-holder-2 :nth-child(2) {
+        grid-column: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .img-holder-1, .img-holder-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    .img-holder-1 :first-child {
+        grid-column: auto;
+    }
+    .img-holder-2 :nth-child(2) {
+        grid-column: auto;
+    }
+    nav{
+        margin-left: 0;
+        padding: 1em 0;
+    }
 }

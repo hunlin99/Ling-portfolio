@@ -10,12 +10,13 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     width: 85%;
     margin: auto;
     padding-top: 10vh;
     color: var(--text-color);
 }
+
 nav {
     width: 20%;
     padding: 1em;
@@ -25,6 +26,7 @@ nav {
     justify-content: space-between;
     flex-direction: row;
 }
+
 a:hover,
 a:visited,
 a:link,
@@ -96,4 +98,8 @@ header {
     width: 20px;
     height: 100%;
     border-left: solid var(--text-color);
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+
 }

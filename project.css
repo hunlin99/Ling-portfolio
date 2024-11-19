@@ -72,3 +72,30 @@ header {
     grid-column-start: 2;
     grid-column-end: 4;
 }
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+    .col-container-1, .col-container-2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    .col-container-1 :first-child, .col-container-2 :nth-child(2){
+        grid-column: auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .col-container-1, .col-container-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+    .col-container-1 :first-child, .col-container-2 :nth-child(2){
+        grid-column: auto;
+    }
+    nav{
+        margin-left: 0;
+        padding: 1em 0;
+    }
+}
