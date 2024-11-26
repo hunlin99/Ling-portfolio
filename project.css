@@ -13,6 +13,11 @@ body{
     margin: auto;
     padding-top: 10vh;
     color: var(--text-color);
+    background-image: url(./image/background-opasity-4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 nav {
     width: 20%;
@@ -45,17 +50,26 @@ header {
     color: var(--text-color);
 }
 
-
-
 .img-block{
     background-color: var(--text-color);
     height: 20em;
     border-radius: 1em;
 }
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+}
 .content-block{
-    background-color: var(--text-color);
+    background-color: rgb(255, 255, 255,0.7);
     height: 20em;
     border-radius: 1em;
+    padding: 2em;
+}
+
+.content-block p{
+    padding: 1em 0;
 }
 
 .col-container-1, .col-container-2{
