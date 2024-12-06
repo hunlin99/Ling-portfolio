@@ -62,7 +62,7 @@ a:active {
 }
 
 .back-color {
-    position: absolute;
+    position: fixed;
     top: -8em;
     right: 20em;
     width: 20%;
