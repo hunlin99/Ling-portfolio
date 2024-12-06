@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./header.css">
     <title>Document</title>
 </head>
 
 <body>
+    <video autoplay muted loop id="video">
+        <source src="./image/bgvideo.mp4" type="video/mp4">
+    </video>
     <header>
         <nav>
-            <a href="./index.html"><i class="material-icons">home</i></a>
+            <a href="./index.html" class="active"><i class="material-icons">home</i></a>
             <a href="./project.html"><i class="material-icons">folder</i></a>
             <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
             <a href="./test.html"><i class="material-icons">mail</i></a>
         </nav>
     </header>
+    <div class="back-color"></div>
     <section class="home">
-        <div class="cover-text-holder">
-            <div>
-                <h3>Hi there, i'm</h3>
-            </div>
-            <div>
-                <h1>Ling Chang</h1>
-            </div>
-            <div>
-                <p>A developer and Designer</p>
-            </div>
+        <div class="cover-content">
+            <h3>Hi there, i'm</h3>
+            <h1>Ling Chang</h1>
         </div>
+        <ul class="scroll-content">
+            <li>
+                <p>A designer, developer, and...</p>
+            </li>
+            <li>
+                <p>creator of human-centered experiences.</p>
+            </li>
+        </ul>
     </section>
 
     <section>
@@ -62,6 +68,9 @@
         </div>
     </section>
     <footer class="footer"></footer>
+    <script src="./script.js"></script>
+    <script type="text/javascript" src="https://fenxianglu.cn/vendor/jquery.min.js"></script>
+
 </body>
 
 </html>

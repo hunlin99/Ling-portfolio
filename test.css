@@ -29,7 +29,7 @@ body {
     margin: auto;
     padding-top: 10vh;
     color: var(--text-color);
-    back background-size: 100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
