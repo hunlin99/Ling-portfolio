@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./header.css">
+    <!--AOS animation links-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <title>Document</title>
 </head>
 
@@ -16,7 +19,7 @@
             <a href="./index.html"><i class="material-icons">home</i></a>
             <a href="./project.html"><i class="material-icons">folder</i></a>
             <a href="./about.html" class="active"><i class="material-icons">perm_contact_calendar</i></a>
-            <a href="./test.html"><i class="material-icons">mail</i></a>
+            <a href="./contact.html"><i class="material-icons">mail</i></a>
         </nav>
     </header>
     <div class="back-color"></div>
@@ -29,7 +32,8 @@
         <div class="profile-picture"><img src="./image/profile-picture.jpg" alt=""></div>
     </section>
     <section class="skill-block-holder">
-        <div class="skill-block">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h2 class="skill-title">3D modeling</h2>
             <div>
                 <label for="cad">AutoCAD </label> <progress id="cad" max="100" value="80">80%</progress>
@@ -41,7 +45,8 @@
                 <label for="keyshot">KeyShot </label> <progress id="keyshot" max="100" value="80">70%</progress>
             </div>
         </div>
-        <div class="skill-block">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h2 class="skill-title">Web development</h2>
             <div>
                 <label for="cad">HTML/CSS</label> <progress id="cad" max="100" value="70">80%</progress>
@@ -53,7 +58,8 @@
                 <label for="keyshot">Figma</label> <progress id="keyshot" max="100" value="80">70%</progress>
             </div>
         </div>
-        <div class="skill-block">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
+        data-aos-easing="ease-in-sine" data-aos-duration="1000">
             <h2 class="skill-title">Graphic Design</h2>
             <div>
                 <label for="cad">Photoshop</label> <progress id="cad" max="100" value="70">80%</progress>
@@ -66,21 +72,21 @@
     </section>
     <section class="background">
         <h1>Educaiton</h1>
-        <div class="background-holder">
+        <div class="background-holder" data-aos="fade-left" data-aos-duration="1000">
             <div class="time-line">
                 <p>2024 - currently studying</p>
                 <p class="vertical-line"></p>
             </div>
-            <div class="bg-content">
+            <div class="bg-content" data-aos="fade-left" data-aos-duration="1000">
                 <p>2024 - currently studying</p>
                 <h3>Web Development-Front end design</h3>
                 <h5>George Brown College</h5>
             </div>
-            <div class="time-line">
+            <div class="time-line" data-aos="fade-left" data-aos-duration="1000">
                 <p>2018 - 2022</p>
                 <p class="vertical-line"></p>
             </div>
-            <div class="bg-content">
+            <div class="bg-content" data-aos="fade-left" data-aos-duration="1000">
                 <p>2018 - 2022</p>
                 <h3>B.A. in Industrial and Commercial Design</h3>
                 <h5>Asia Eastern University of Science and Technolog</h5>
@@ -88,11 +94,11 @@
         </div>
         <h1>Work Experence</h1>
         <div class="background-holder">
-            <div class="time-line">
+            <div class="time-line" data-aos="fade-left" data-aos-duration="1000">
                 <p>2022 - 2023</p>
                 <p class="vertical-line"></p>
             </div>
-            <div class="bg-content">
+            <div class="bg-content" data-aos="fade-left" data-aos-duration="1000">
                 <p>2022 - 2023</p>
                 <h3>Industrial Design EngineeringIndustrial Design Engineering</h3>
                 <h5>Create Electronic Optical Co., Ltd, NEW TAIPEI, TAIWAN</h5>
@@ -108,11 +114,11 @@
             </div>
         </div>
         <div class="background-holder">
-            <div class="time-line">
+            <div class="time-line" data-aos="fade-left" data-aos-duration="1000">
                 <p>JUL-AUG 2023</p>
                 <p class="vertical-line"></p>
             </div>
-            <div class="bg-content">
+            <div class="bg-content" data-aos="fade-left" data-aos-duration="1000">
                 <p>JUL-AUG 2023</p>
                 <h3>Engineer assistant (Contract Employee)</h3>
                 <h5>Mercuries Data Systems Ltd, HUALIEN, TAIWAN</h5>
@@ -126,6 +132,9 @@
         </div>
 
     </section>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
