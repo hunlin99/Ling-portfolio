@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="./contact.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="./contact.css">
+  <!--Google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Limelight&family=Pattaya&display=swap"
+      rel="stylesheet">
+  <title>Document</title>
 </head>
+
 <body>
-    <video autoplay muted loop id="video">
-        <source src="./image/bgvideo.mp4" type="video/mp4">
-    </video>
-    <header>
-        <nav>
-            <a href="./index.html"><i class="material-icons">home</i></a>
-            <a href="./project.html"><i class="material-icons">folder</i></a>
-            <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
-            <a href="./contact.html" class="active"><i class="material-icons">mail</i></a>
-        </nav>
-    </header>
-    <div class="back-color"></div>
-    <!--<small>Enter message (optional) and click button "Send"</small>-->
-<div class="wrapper centered">
-  <article class="letter">
-    <div class="side">
-      <h1>Contact us</h1>
-      <p>
-        <textarea placeholder="Your message"></textarea>
-      </p>
-    </div>
-    <div class="side">
-      <p>
-        <input type="text" placeholder="Your name" >
-      </p>
-      <p>
-        <input type="email" placeholder="Your email" >
-      </p>
-      <p>
-        <button id="sendLetter">Send</button>
-      </p>
-    </div>
-  </article>
-  <div class="envelope front"></div>
-  <div class="envelope back"></div>
-</div>
-<p class="result-message centered">Thank you for your message</p>
+  <video autoplay muted loop id="video">
+    <source src="./image/bgvideo.mp4" type="video/mp4">
+  </video>
+  <header>
+    <nav>
+      <a href="./index.html"><i class="material-icons">home</i></a>
+      <a href="./project.html"><i class="material-icons">folder</i></a>
+      <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
+      <a href="./contact.html" class="active"><i class="material-icons">mail</i></a>
+    </nav>
+  </header>
+  <div class="back-color"></div>-
+  <div class="wrapper centered">
+    <article class="letter">
+      <div class="side">
+        <h1 class="limelight-regular">Contact us</h1>
+        <p>
+          <textarea placeholder="Your message"></textarea>
+        </p>
+      </div>
+      <div class="side">
+        <p>
+          <input type="text" placeholder="Your name">
+        </p>
+        <p>
+          <input type="email" placeholder="Your email">
+        </p>
+        <p>
+          <button id="sendLetter">Send</button>
+        </p>
+      </div>
+    </article>
+    <div class="envelope front"></div>
+    <div class="envelope back"></div>
+  </div>
+  <p class="result-message centered">Thank you for your message</p>
 </body>
+
 </html>
