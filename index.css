@@ -1,0 +1,207 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark: #0074E1;
+    --nav-bg-color: #d3eff0;
+}
+
+.back-color {
+    position: fixed;
+    top: -8em;
+    right: 20em;
+    width: 20%;
+    height: 10em;
+    background-color: var(--nav-bg-color);
+    border-radius: 50%;
+    box-shadow: -15px 10px 80px 80px var(--nav-bg-color);
+}
+
+.home {
+    height: 100vh;
+}
+
+.cover-content {
+    position: relative;
+    top: 50vh;
+    right: 1em;
+    width: 100%;
+}
+
+.scroll-content {
+    width: 100%;
+    height: 2.8em;
+    overflow: hidden;
+}
+
+.scroll-content li {
+    font-size: 2.5em;
+    line-height: 42px;
+    overflow: hidden;
+}
+
+.cover-content h1 {
+    font-size: 5em;
+}
+
+.cover-content h3 {
+    font-size: 3em;
+}
+
+.cover-content h1,
+h3,
+p {
+    text-shadow: 1.5px 1.5px 0px white;
+}
+
+.note {
+    width: 60%;
+    margin: 0 auto;
+    padding: 1em;
+    color: var(--text-color);
+}
+
+.note p {
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.img-block {
+    background-color: var(--text-color);
+    height: 20em;
+    border-radius: 1em;
+    position: relative;
+    /* Enable child positioning */
+    overflow: hidden;
+    /* Prevent children from overflowing the container */
+}
+
+.img-block p {
+    position: absolute;
+    /* Allow overlap on the image */
+    top: 0.5em;
+    /* Center text vertically */
+    right: 0.5em;
+    /* Center text horizontally */
+    font-size: 2.5em;
+    z-index: 2;
+    /* Ensure text is above the image */
+    color: var(--text-color);
+}
+
+.img-block img {
+    object-fit: cover;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* Ensure it fills the parent */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Ensure image is behind the text */
+}
+
+.img-block :nth-child(3) {
+    display: none;
+}
+
+.img-block picture source {
+    object-fit: cover;
+    border-radius: 1em;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* Ensure it fills the parent */
+    top: 0;
+    left: 0;
+    z-index: 1;
+    /* Ensure image is behind the text */
+}
+
+.img-holder-1,
+.img-holder-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2em;
+    padding: 1em;
+}
+
+.img-holder-1 :first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.img-holder-2 :nth-child(2) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.footer {
+    margin-top: 2em;
+    height: 15vh;
+    background-color: var(--text-color);
+}
+
+@media screen and (min-width: 651px) and (max-width: 1000px) {
+
+    .img-holder-1,
+    .img-holder-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+
+    .img-holder-1 :first-child {
+        grid-column: auto;
+    }
+
+    .img-holder-2 :nth-child(2) {
+        grid-column: auto;
+    }
+
+    .img-block :nth-child(3) {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .img-holder-1,
+    .img-holder-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 1em;
+    }
+
+    .img-holder-1 :first-child {
+        grid-column: auto;
+    }
+
+    .img-holder-2 :nth-child(2) {
+        grid-column: auto;
+    }
+
+    nav {
+        margin-left: 0;
+        padding: 1em 0;
+    }
+
+    .cover-text-holder h1 {
+        font-size: 3.5em;
+    }
+
+    .cover-text-holder h3 {
+        font-size: 1.5em;
+    }
+
+    .cover-text-holder p {
+        font-size: 1.5em;
+    }
+
+    .img-block :nth-child(3) {
+        display: inline;
+    }
+}

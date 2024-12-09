@@ -5,68 +5,9 @@
   --text-color: #596774;
   --footer-color-light: #D7FAFF;
   --footer-color-dark: #0074E1;
-}
-.limelight-regular {
-  font-family: "Limelight", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  --nav-bg-color: #d3eff0;
 }
 
-video {
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: -1000;
-  margin: 0 auto;
-}
-
-body {
-  width: 85%;
-  margin: auto;
-  color: var(--text-color);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/*header*/
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 10vh;
-  z-index: 1000;
-  /* 确保 header 在其他元素之上 */
-}
-
-nav {
-  width: 30%;
-  margin-right: 12em;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  margin-left: auto !important;
-}
-
-a:hover,
-a:visited,
-a:link,
-a:active {
-  text-decoration: none;
-  color: var(--footer-text-color);
-}
 
 .back-color {
   position: fixed;
@@ -74,48 +15,9 @@ a:active {
   right: 0em;
   width: 10%;
   height: 10em;
-  background-color: #6ea8fa;
+  background-color: var(--nav-bg-color);
   border-radius: 50%;
-  box-shadow: -15px 10px 70px 80px #6ea8fa;
-}
-
-a.active {
-  opacity: 1;
-  background: #ffffff;
-  border-radius: 0 0 50% 50%;
-  box-shadow: 0 -50px 0 30px rgb(255, 255, 255);
-  position: relative;
-
-}
-
-i {
-  padding: 0.6em;
-}
-
-a.active ::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 35px;
-  background: #6ea8fa;
-  border-radius: 0 30px 0 30px;
-}
-
-a.active::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  width: 30px;
-  height: 35px;
-  background: #6ea8fa;
-  border-radius: 30px 0 30px 0;
-}
-
-a :hover {
-  background-color: rgb(248, 235, 198);
-  border-radius: 50%;
+  box-shadow: -15px 10px 70px 80px var(--nav-bg-color);
 }
 
 /*content section*/
