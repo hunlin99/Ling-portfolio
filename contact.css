@@ -32,13 +32,6 @@ h1 {
   font-family: 'Dancing Script';
 }
 
-small {
-  display: block;
-  padding: 1rem 0;
-  font-size: 0.8rem;
-  transition: opacity 0.33s;
-}
-
 textarea,
 input,
 button {
@@ -109,7 +102,6 @@ textarea:focus {
   width: 60rem;
   margin: auto;
   perspective: 60rem;
-  margin-top: 8em;
 }
 
 .side {

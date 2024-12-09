@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!--CSS file-->
+    <!--CSS file-->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="index.css">
-      <!--Google icon-->
+    <!--Google icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,7 @@
 <body>
     <div class="loader-container">
         <div class="loader"></div>
-      </div>
+    </div>
     <video autoplay muted loop id="video">
         <source src="./image/bgvideo.mp4" type="video/mp4">
     </video>
@@ -80,7 +80,24 @@
     </section>
     <footer class="footer"></footer>-->
     <script src="./script.js"></script>
-    <script type="text/javascript" src="https://fenxianglu.cn/vendor/jquery.min.js"></script>
+    <!-- Add jQuery CDN first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--<script>
+        // Select the loader container and video element
+        const loader = document.querySelector('.loader-container');
+        const video = document.getElementById('video');
+
+        // Wait for the video to be ready to play (canplaythrough event)
+        video.addEventListener('canplaythrough', function () {
+            // Add a class to hide the loader with a smooth transition
+            loader.classList.add('hide-loader');
+
+            // Remove the loader after the fade-out transition is complete
+            loader.addEventListener('transitionend', function () {
+                loader.remove(); // Remove the loader element from the DOM
+            });
+        });
+    </script>-->
 
 </body>
 

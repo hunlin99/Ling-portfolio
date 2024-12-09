@@ -4,20 +4,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google icon-->
+  <!--Google icon-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <!--CSS file-->
+  <!--CSS file-->
   <link rel="stylesheet" href="./contact.css">
   <link rel="stylesheet" href="./style.css">
   <!--Google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Limelight&family=Pattaya&display=swap"
-      rel="stylesheet">
+    rel="stylesheet">
   <title>Document</title>
 </head>
 
 <body>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
   <video autoplay muted loop id="video">
     <source src="./image/bgvideo.mp4" type="video/mp4">
   </video>
@@ -54,6 +57,27 @@
     <div class="envelope back"></div>
   </div>
   <p class="result-message centered">Thank you for your message</p>
+
+  <script src="./script.js"></script>
+  <!-- Add jQuery CDN first -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- loading animation -->
+  <script>
+    // Select the loader container and video element
+    const loader = document.querySelector('.loader-container');
+    const video = document.getElementById('video');
+
+    // Wait for the video to be ready to play (canplaythrough event)
+    video.addEventListener('canplaythrough', function () {
+      // Add a class to hide the loader with a smooth transition
+      loader.classList.add('hide-loader');
+
+      // Remove the loader after the fade-out transition is complete
+      loader.addEventListener('transitionend', function () {
+        loader.remove(); // Remove the loader element from the DOM
+      });
+    });
+  </script>
 </body>
 
 </html>

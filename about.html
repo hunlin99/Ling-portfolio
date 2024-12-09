@@ -21,6 +21,9 @@
 </head>
 
 <body>
+    <div class="loader-container">
+        <div class="loader"></div>
+      </div>
     <header>
         <nav>
             <a href="./index.html"><i class="material-icons">home</i></a>
@@ -141,6 +144,26 @@
     </section>
     <script>
         AOS.init();
+      </script>
+      <script src="./script.js"></script>
+      <!-- Add jQuery CDN first -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+          window.addEventListener('load', function () {
+              // Select the loader container
+              const loader = document.querySelector('.loader-container');
+  
+              // Add a delay (optional) to simulate loading time or allow for a smoother transition
+              setTimeout(() => {
+                  // Add a class to hide the loader with a smooth transition
+                  loader.classList.add('hide-loader');
+  
+                  // Remove the loader after the fade-out transition is complete
+                  loader.addEventListener('transitionend', function () {
+                      loader.remove(); // Remove the loader element from the DOM
+                  });
+              }, 1000); // Optional delay before hiding the loader (adjust as needed)
+          });
       </script>
 </body>
 
