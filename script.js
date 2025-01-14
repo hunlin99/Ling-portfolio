@@ -1,3 +1,19 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeBtn");
+
+  // Show the mobile menu when the menu button is clicked
+  menuBtn.addEventListener("click", function () {
+      mobileMenu.style.display = "flex"; // Show the menu
+  });
+
+  // Hide the mobile menu when the close button is clicked
+  closeBtn.addEventListener("click", function () {
+      mobileMenu.style.display = "none"; // Hide the menu
+  });
+});
+
 //loading animation
 window.addEventListener('load', function () {
   // Select the loader container
@@ -24,7 +40,6 @@ window.addEventListener('load', function () {
   window.addEventListener('resize', () => {
       setupMenuToggle();
   });
-});
 
 
 //cover content scroll

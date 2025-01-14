@@ -143,6 +143,7 @@ nav a :hover {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  z-index: 900;
 }
 #mobileMenu {
   position: fixed;
@@ -256,8 +257,8 @@ nav a :hover {
 /*close button*/
 .close-container {
   position: absolute;
-  top: 1em;
-  right: 3em;
+  top: 3%;
+  right: 10%;
   width: 30px;
   height: 30px;
   cursor: pointer;
