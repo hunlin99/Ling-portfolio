@@ -137,7 +137,16 @@ img {
 }
 
 .content-block p {
-    padding: 1em 0;
+    font-size: 0.8em;
+    padding: 0.2em 0.2em;
+}
+
+.content-block h3{
+    font-size: 1.5em;
+}
+.content-block i{
+    padding: 0.3em;
+    padding-left: 0.5em;
 }
 
 .col-container-1,
@@ -146,6 +155,15 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2em;
     padding: 1em;
+}
+.content-block .empty-block{
+    width: 100%;
+    height: 50%;
+}
+.content-block a{
+    position: relative;
+    left: -0.5em;
+    bottom: 0;
 }
 
 .col-container-1 :first-child {
