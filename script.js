@@ -15,6 +15,18 @@ window.addEventListener('load', function () {
   }, 1000); // Optional delay before hiding the loader (adjust as needed)
 });
 
+
+
+  // Initial setup
+  setupMenuToggle();
+
+  // Re-apply listeners on resize for responsiveness
+  window.addEventListener('resize', () => {
+      setupMenuToggle();
+  });
+});
+
+
 //cover content scroll
 var startInterval = setInterval(vscroll, 3000);
 
@@ -34,4 +46,3 @@ function vscroll() {
     });
   }
   var startInterval = setInterval(vscroll, 3000);
-
