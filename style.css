@@ -33,7 +33,7 @@
     'opsz' 24
 }
 
-/*Bg-vedio in home and contact*/
+/*Bg-video in home and contact*/
 video {
   width: 100vw;
   height: 100vh;
@@ -136,7 +136,7 @@ nav a :hover {
 
 /* mobile menu */
 #menuBtn {
-  display: block;
+  display: none;
   position: absolute;
   top: 5%;
   right: 10%;
@@ -186,11 +186,12 @@ nav a :hover {
   height: 100%;
   background: #000;
   /* Background color */
-  display: none;
+  display: inline;
   justify-content: center;
   align-items: center;
   z-index: 1000;
   /* On top of everything else */
+  display: flex;
 }
 
 .loader {
