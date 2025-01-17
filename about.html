@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!--CSS file-->
+    <!--CSS file-->
     <link rel="stylesheet" href="./about.css">
-    <link rel="stylesheet" href="style.css">
-      <!--Google icon-->
+    <link rel="stylesheet" href="./style.css">
+    <!--Google icon-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <!--AOS animation links-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -17,14 +17,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Limelight&family=Pattaya&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="loader-container">
         <div class="loader"></div>
-      </div>
-      <div class="menu-bg">
+    </div>
+    <div id="menuBtn"><i class="fa fa-bars" style="font-size:26px"></i></div>
+    <div class="menu-bg" id="mobileMenu">
+        <div class="close-container" id="closeBtn">
+            <div class="leftright"></div>
+            <div class="rightleft"></div>
+        </div>
         <div class="menu-container">
             <a href="./index.html"><i class="material-icons">home</i>
                 <span>HOME</span>
@@ -37,11 +43,10 @@
             <a href="./contact.html"><i class="material-icons">mail</i>
                 <span>CONTACT</span>
             </a>
-
         </div>
     </div>
     <header>
-        <nav>
+        <nav class="nav">
             <a href="./index.html"><i class="material-icons">home</i></a>
             <a href="./project.html"><i class="material-icons">folder</i></a>
             <a href="./about.html" class="active"><i class="material-icons">perm_contact_calendar</i></a>
@@ -58,8 +63,8 @@
         <div class="profile-picture"><img src="./image/profile-picture.jpg" alt=""></div>
     </section>
     <section class="skill-block-holder">
-        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
             <h2 class="skill-title limelight-regular">3D modeling</h2>
             <div>
                 <label for="cad">AutoCAD </label> <progress id="cad" max="100" value="80">80%</progress>
@@ -71,8 +76,8 @@
                 <label for="keyshot">KeyShot </label> <progress id="keyshot" max="100" value="80">70%</progress>
             </div>
         </div>
-        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
             <h2 class="skill-title limelight-regular">Web development</h2>
             <div>
                 <label for="cad">HTML/CSS</label> <progress id="cad" max="100" value="70">80%</progress>
@@ -84,8 +89,8 @@
                 <label for="keyshot">Figma</label> <progress id="keyshot" max="100" value="80">70%</progress>
             </div>
         </div>
-        <div class="skill-block" data-aos="fade-up" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        <div class="skill-block" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="1000">
             <h2 class="skill-title limelight-regular">Graphic Design</h2>
             <div>
                 <label for="cad">Photoshop</label> <progress id="cad" max="100" value="70">80%</progress>
@@ -160,27 +165,27 @@
     </section>
     <script>
         AOS.init();
-      </script>
-      <script src="./script.js"></script>
-      <!-- Add jQuery CDN first -->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-          window.addEventListener('load', function () {
-              // Select the loader container
-              const loader = document.querySelector('.loader-container');
-  
-              // Add a delay (optional) to simulate loading time or allow for a smoother transition
-              setTimeout(() => {
-                  // Add a class to hide the loader with a smooth transition
-                  loader.classList.add('hide-loader');
-  
-                  // Remove the loader after the fade-out transition is complete
-                  loader.addEventListener('transitionend', function () {
-                      loader.remove(); // Remove the loader element from the DOM
-                  });
-              }, 1000); // Optional delay before hiding the loader (adjust as needed)
-          });
-      </script>
+    </script>
+    <script src="./script.js"></script>
+    <!-- Add jQuery CDN first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        window.addEventListener('load', function () {
+            // Select the loader container
+            const loader = document.querySelector('.loader-container');
+
+            // Add a delay (optional) to simulate loading time or allow for a smoother transition
+            setTimeout(() => {
+                // Add a class to hide the loader with a smooth transition
+                loader.classList.add('hide-loader');
+
+                // Remove the loader after the fade-out transition is complete
+                loader.addEventListener('transitionend', function () {
+                    loader.remove(); // Remove the loader element from the DOM
+                });
+            }, 1000); // Optional delay before hiding the loader (adjust as needed)
+        });
+    </script>
 </body>
 
 </html>

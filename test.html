@@ -11,14 +11,33 @@
     <video autoplay muted loop id="video">
         <source src="./image/bgvideo.mp4" type="video/mp4">
     </video>
-    <header>
-        <nav>
-            <a href="./index.html" class="active"><i class="material-icons">home</i></a>
-            <a href="./project.html"><i class="material-icons">folder</i></a>
-            <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
-            <a href="./test.html"><i class="material-icons">mail</i></a>
+    <div class="menu-bg" id="mobileMenu">
+        <div class="close-container" id="closeBtn">
+            <div class="leftright"></div>
+            <div class="rightleft"></div>
+        </div>
+        <div class="menu-container">
+            <a href="./index.html"><i class="material-icons">home</i>
+                <span>HOME</span>
+            </a>
+            <a href="./project.html" class="active"><i class="material-icons">folder</i>
+                <span>PROJECTS</span>
+            </a>
+            <a href="./about.html"><i class="material-icons">perm_contact_calendar</i>
+                <span>ABOUT</span></a>
+            <a href="./contact.html"><i class="material-icons">mail</i>
+                <span>CONTACT</span>
+            </a>
+        </div>
+    </div>
+      <header>
+        <nav class="nav">
+          <a href="./index.html"><i class="material-icons">home</i></a>
+          <a href="./project.html"><i class="material-icons">folder</i></a>
+          <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
+          <a href="./contact.html" class="active"><i class="material-icons">mail</i></a>
         </nav>
-    </header>
+      </header>
     <div class="back-color"></div>
     <!-- <script src="./script.js"></script> -->
 </body>

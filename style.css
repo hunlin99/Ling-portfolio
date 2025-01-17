@@ -135,8 +135,8 @@ nav a :hover {
 }
 
 /* mobile menu */
-#menuBtn{
-  display: none;
+#menuBtn {
+  display: block;
   position: absolute;
   top: 5%;
   right: 10%;
@@ -145,6 +145,7 @@ nav a :hover {
   cursor: pointer;
   z-index: 900;
 }
+
 #mobileMenu {
   position: fixed;
   top: 0;
@@ -159,16 +160,19 @@ nav a :hover {
   justify-content: center;
   align-items: center;
 }
-.menu-container{
+
+.menu-container {
   width: 25%;
 }
-.menu-container a{
+
+.menu-container a {
   height: 3em;
   align-items: center;
   display: flex;
   padding: 1em;
 }
-.menu-container i{
+
+.menu-container i {
   padding: 0 10%;
 }
 
@@ -293,7 +297,7 @@ nav a :hover {
 
 .close-container:hover .rightleft {
   transform: rotate(45deg);
-  background-color:  var(--footer-color-dark);
+  background-color: var(--footer-color-dark);
 }
 
 .close-container:hover label {
@@ -301,7 +305,12 @@ nav a :hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  #menuBtn{
+  #menuBtn {
     display: block;
-   }
+  }
+
+  .nav,
+  .back-color {
+    display: none;
+  }
 }
