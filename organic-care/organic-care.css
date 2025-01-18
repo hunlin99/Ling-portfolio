@@ -1,0 +1,168 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark: #0074E1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.body{
+    width: 100%;
+}
+
+#nav{
+    margin-right: 5.25%;
+}
+
+/*header*/
+.back-color {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 55px;
+    background-color: #d3eff0;
+    border-radius: 0 0 0 15rem;
+    clip-path: path('M 0 0 L 100% 0 L 100% 100% Q 0 100% 0 0'); /* Smooth curve matching border-radius */
+    z-index: 1;
+}
+
+/*Cover section*/
+.cover {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 3em;
+}
+
+.cover-container{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 1em;
+}
+
+.device-mockup{
+    width: 100%;
+    height: 70vh;
+    margin-top: 20%;
+}
+.device-mockup h1{
+    font-size: 3em;
+    padding: 0;
+}
+.device-mockup p{
+    font-size: 1.5em;
+}
+
+img{
+    object-fit: scale-down;
+    width: 100%;
+    height: 100%;
+}
+.screenshot-2{
+    margin-top: 40%;
+}
+.screenshot-1{
+    position: relative;
+    top: -5%;
+}
+
+/*Text*/
+h1{
+    padding-top: 1em;
+}
+
+/*Background-color*/
+.description,
+.color-scheme {
+    background-color: #FDF5EB;
+    width: 100vw;
+    padding: 5% 10%;
+}
+
+.grid-system,
+.tools{
+    background-color: #A7BDB4;
+    width: 100vw;
+    padding: 5% 10%;
+}
+
+/*Description section*/
+.description p{
+    padding-top: 0.5em;
+}
+
+.grid-system{
+    margin: auto 0;
+}
+.grid-content{
+    position: absolute;
+    display: flex;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+
+}
+.grid-container p{
+    text-align: center;
+}
+
+.color-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.primary-color-block,
+.secondary-color-block,
+.third-color-block,
+.fourth-color-block{
+    width: 6em;
+    height: 6em;
+    border: solid #A7BDB4;
+}
+
+.primary-color-block{
+    background-color: #A7BDB4;
+    border-radius: 0 50% 0 50%;
+}
+.secondary-color-block{
+    background-color: #FDF5EB;
+    border-radius:  50% 0 50% 0;
+}
+.third-color-block{
+    background-color: #494A42;
+    border-radius: 50% 0 50% 0;
+}
+.fourth-color-block{
+    background-color: #2A2B29;
+    border-radius: 0 50% 0 50%;
+}
+
+.color-scheme p{
+    font-size: 2em;
+}
+
+/*grid-system section*/
+.grid-system h1{
+    color: #FDF5EB;
+}
+
+/*tools section*/
+.tools h1{
+    color: #FDF5EB;
+}
