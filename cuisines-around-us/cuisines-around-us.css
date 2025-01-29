@@ -1,0 +1,270 @@
+:root {
+    --text-color: #596774;
+    --footer-color-light: #D7FAFF;
+    --footer-color-dark: #0074E1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.limelight-regular {
+    font-family: "Limelight", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.body{
+    width: 100%;
+    color: #344D66;
+}
+
+#nav{
+    margin-right: 5.25%;
+}
+
+/*header*/
+.back-btn{
+    position: absolute;
+    top: 0;
+}
+.back-btn a{
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/*Cover section*/
+.cover {
+    width: 85%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.cover-container{
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 1em;
+}
+
+.device-mockup{
+    width: 100%;
+    height: 70vh;
+    margin-top: 20%;
+}
+.device-mockup h1{
+    font-size: 3em;
+    padding: 0;
+}
+.device-mockup p{
+    font-size: 1.5em;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.screenshot-2{
+    margin-top: 40%;
+}
+.screenshot-1{
+    position: relative;
+    top: -5%;
+}
+
+/*Text*/
+h1{
+    padding-top: 1em;
+}
+p{
+    line-height: 1.5em;
+}
+
+/*Background-color*/
+.description,
+.color-scheme {
+    background-color: #FDF5EB;
+    width: 100vw;
+    padding: 0 10%;
+    padding-top: 5%;
+}
+
+.grid-system,
+.improvements{
+    background-color: #344D66;
+    width: 100vw;
+    padding: 3% 10%;
+    color: white;
+}
+
+/*Description section*/
+.description p{
+    padding-top: 0.5em;
+}
+
+/*features-container*/
+.features-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em 0;
+}
+
+.features-block{
+    padding: 2em;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+/*color scheme*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+
+}
+.grid-container p{
+    text-align: center;
+}
+
+.color-scheme{
+    padding-bottom: 5%;
+}
+.color-container{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+.primary-color-block,
+.secondary-color-block,
+.third-color-block,
+.fourth-color-block{
+    width: 6em;
+    height: 6em;
+    border: solid #344D66;
+}
+
+.primary-color-block{
+    background-color: #FBF0DF;
+    border-radius: 0 50% 0 50%;
+}
+.secondary-color-block{
+    background-color: white;
+    border-radius:  50% 0 50% 0;
+}
+.third-color-block{
+    background-color: #FFBCA3;
+    border-radius: 50% 0 50% 0;
+}
+.fourth-color-block{
+    background-color: #344D66;
+    border-radius: 0 50% 0 50%;
+}
+
+.color-scheme p{
+    font-size: 2em;
+}
+
+/*grid-system*/
+.grid-system{
+    margin: auto 0;
+    color: white;
+}
+
+.grid-system img{
+    padding-top: 2%;
+}
+
+/*improvements*/
+.improvements-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1em;
+    padding-top: 2%;
+}
+.improvements-block{
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2em;
+    color: #344D66;
+}
+@media screen and (min-width: 1001px) and (max-width: 1200px){
+    .device-mockup{
+        height: 60vh;
+        margin-top: 10%;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+    .device-mockup{
+        height: 50vh;
+        margin-top: 10%;
+    }
+    .device-mockup h1{
+        font-size: 2.5em;
+    }
+    .device-mockup p{
+        font-size: 1.2em;
+    }
+    
+    img{
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+    }
+    .screenshot-2{
+        margin-top: 30%;
+    }
+    .screenshot-1{
+        position: relative;
+    }    
+}
+
+@media only screen and (max-width: 750px){
+    .cover {
+        padding-top: 0;
+    }
+    .device-mockup h1{
+        font-size: 2em;
+        padding: 0;
+    }
+    .device-mockup p{
+        font-size: 1.2em;
+    }
+    .features-container{
+        grid-template-columns: 1fr;
+    }
+    .grid-container p{
+        font-size: 1.5em;
+    }
+    .screenshot-2{
+       display: none;
+    }
+    .screenshot-1{
+        display: none;
+    }   
+    .cover-container{
+        display: inline;
+    }
+
+    .device-mockup{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        height: 30vh;
+        
+    }
+    .improvements-container{
+        grid-template-columns: 1fr;
+    }
+}
+
