@@ -1,19 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menuBtn");
-  const mobileMenu = document.getElementById("mobileMenu");
-  const closeBtn = document.getElementById("closeBtn");
-
-  // Show the mobile menu when the menu button is clicked
-  menuBtn.addEventListener("click", function () {
-      mobileMenu.style.display = "flex"; // Show the menu
-  });
-
-  // Hide the mobile menu when the close button is clicked
-  closeBtn.addEventListener("click", function () {
-      mobileMenu.style.display = "none"; // Hide the menu
-  });
-});
-
 //loading animation
 window.addEventListener('load', function () {
   // Select the loader container
@@ -31,6 +15,32 @@ window.addEventListener('load', function () {
   }, 1000); // Optional delay before hiding the loader (adjust as needed)
 });
 
+//menu btn
+document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const closeBtn = document.getElementById("closeBtn");
+
+  // Show the mobile menu when the menu button is clicked
+  menuBtn.addEventListener("click", function () {
+      mobileMenu.style.display = "flex"; // Show the menu
+  });
+
+  // Hide the mobile menu when the close button is clicked
+  closeBtn.addEventListener("click", function () {
+      mobileMenu.style.display = "none"; // Hide the menu
+  });
+});
+
+// Scroll content animation
+function vscroll() {
+  var frtEle = $('.scroll-content li:first');
+  frtEle.animate({ 'margin-top': -$('.scroll-content li').height() }, 500, function () {
+    frtEle.css('margin-top', 0);
+    $('.scroll-content').append(frtEle);
+  });
+}
+var startInterval = setInterval(vscroll, 3000);
 
 
   // Initial setup
@@ -52,12 +62,3 @@ $('.scroll-content li').hover(function () {
     startInterval = setInterval(vscroll, 3000);
 });
 
-// Scroll content animation
-function vscroll() {
-    var frtEle = $('.scroll-content li:first');
-    frtEle.animate({ 'margin-top': -$('.scroll-content li').height() }, 500, function () {
-      frtEle.css('margin-top', 0);
-      $('.scroll-content').append(frtEle);
-    });
-  }
-  var startInterval = setInterval(vscroll, 3000);
