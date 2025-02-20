@@ -16,6 +16,8 @@
 }
 .body{
     width: 100%;
+    color: #344D66;
+    padding-top: 2vh; /*To cover padding-top: 10vh in style.css*/
 }
 
 #nav{

@@ -134,6 +134,19 @@ nav a :hover {
   border-radius: 50%;
 }
 
+/*detail page header*/
+.back-btn{
+  position: absolute;
+  top: 0;
+  height: auto;
+}
+.back-btn a{
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
 /* mobile menu */
 #menuBtn {
   display: none;

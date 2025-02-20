@@ -49,6 +49,10 @@ body {
     border-radius: 50%;
 }
 
+.about-content{
+    line-height: 2em;
+}
+
 .skill-block-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

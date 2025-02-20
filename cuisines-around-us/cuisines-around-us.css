@@ -17,6 +17,7 @@
 .body{
     width: 100%;
     color: #344D66;
+    padding-top: 2vh; /*To cover padding-top: 10vh in style.css*/
 }
 
 #nav{
@@ -43,7 +44,6 @@
     justify-content: space-between;
     margin: auto;
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 .cover-container{

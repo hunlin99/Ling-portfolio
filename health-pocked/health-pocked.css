@@ -20,17 +20,7 @@
 }
 
 
-/*header*/
-.back-btn{
-    position: absolute;
-    top: 0;
-}
-.back-btn a{
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    gap: 1em;
-}
+
 
 /*Text*/
 .cover-content h1 {
