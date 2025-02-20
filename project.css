@@ -108,7 +108,9 @@ img {
     grid-column-start: 2;
     grid-column-end: 4;
 }
-
+.mobile-hr{
+    display: none;
+}
 
 /*Behance block*/
 .behance-container{
@@ -156,8 +158,28 @@ img {
     .col-container-2 :nth-child(2) {
         grid-column: auto;
     }
+    .col-container-1 .img-block,
+    .col-container-2 .img-block {
+        order: 1;
+    }
+
+    .col-container-1 .content-block,
+    .col-container-2 .content-block {
+        order: 2;
+    }
+
+    .content-block {
+        height: 15em;
+    }
+    .content-block .empty-block{
+        height: 40%;
+    }
+
     .behance-container{
         grid-template-columns: 1fr;
+    }
+    .mobile-hr{
+        display: block;
     }
 
 }
