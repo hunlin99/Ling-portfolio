@@ -16,6 +16,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Limelight&family=Pattaya&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--gsap-->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
 <title>Document</title>
 
 <body class="body">
@@ -69,6 +72,16 @@
                     <p>Optimized layout for both desktop and mobile devices.</p>
             </div>
         </div>
+        <h1 class=" limelight-regular">Personas</h1>
+        <hr>
+        <div class="personas-container">
+            <div class="square square-1"></div>
+            <div class="square square-2"></div>
+            <div class="square square-3"></div>
+        </div>
+        <h1 class=" limelight-regular">User Journey Map</h1>
+        <hr>
+        <img class="user-journey" src="./user-journey map.png" alt="">
     </section>
     <section class="color-scheme">
         <h1 class="limelight-regular">Color Scheme</h1>
@@ -120,9 +133,11 @@
     <script>
         AOS.init();
     </script>
-    <script src="./script.js"></script>
+    <script src="../script.js"></script>
+    <script src="./persona.js"></script>
     <!-- Add jQuery CDN first -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
 </body>
 
 </html>

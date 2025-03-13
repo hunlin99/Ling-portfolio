@@ -43,22 +43,3 @@ function vscroll() {
 var startInterval = setInterval(vscroll, 3000);
 
 
-  // Initial setup
-  setupMenuToggle();
-
-  // Re-apply listeners on resize for responsiveness
-  window.addEventListener('resize', () => {
-      setupMenuToggle();
-  });
-
-
-//cover content scroll
-var startInterval = setInterval(vscroll, 3000);
-
-// hover to stop
-$('.scroll-content li').hover(function () {
-    clearTimeout(startInterval);
-}, function () {
-    startInterval = setInterval(vscroll, 3000);
-});
-

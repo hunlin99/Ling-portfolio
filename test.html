@@ -1,45 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./test.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/Flip.min.js"></script>
 </head>
+
 <body>
-    <video autoplay muted loop id="video">
-        <source src="./image/bgvideo.mp4" type="video/mp4">
-    </video>
-    <div class="menu-bg" id="mobileMenu">
-        <div class="close-container" id="closeBtn">
-            <div class="leftright"></div>
-            <div class="rightleft"></div>
-        </div>
-        <div class="menu-container">
-            <a href="./index.html"><i class="material-icons">home</i>
-                <span>HOME</span>
-            </a>
-            <a href="./project.html" class="active"><i class="material-icons">folder</i>
-                <span>PROJECTS</span>
-            </a>
-            <a href="./about.html"><i class="material-icons">perm_contact_calendar</i>
-                <span>ABOUT</span></a>
-            <a href="./contact.html"><i class="material-icons">mail</i>
-                <span>CONTACT</span>
-            </a>
-        </div>
-    </div>
-      <header>
-        <nav class="nav">
-          <a href="./index.html"><i class="material-icons">home</i></a>
-          <a href="./project.html"><i class="material-icons">folder</i></a>
-          <a href="./about.html"><i class="material-icons">perm_contact_calendar</i></a>
-          <a href="./contact.html" class="active"><i class="material-icons">mail</i></a>
-        </nav>
-      </header>
-    <div class="back-color"></div>
-    <!-- <script src="./script.js"></script> -->
+    <div class="square"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(Flip)
+            // gsap code here!
+        });
+        const square = document.querySelector(".square");
+        square.addEventListener("click", () => {
+            const state = Flip.getState(square);
+            square.classList.toggle("full-screen");
+            Flip.from(state);
+        });
+    </script>
 </body>
 
 </html>
