@@ -182,4 +182,8 @@ img {
         display: block;
     }
 
+    .img-block {
+        height: 12em;
+    }
+
 }

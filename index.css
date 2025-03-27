@@ -143,7 +143,8 @@ p {
     background-color: var(--text-color);
 }
 
-@media screen and (min-width: 651px) and (max-width: 1000px) {
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
 
     .img-holder-1,
     .img-holder-2 {
@@ -164,6 +165,19 @@ p {
     .img-block :nth-child(3) {
         display: inline;
     }
+    .scroll-content li {
+    font-size: 2.5em;
+    line-height: 42px;
+    overflow: hidden;
+}
+
+.cover-content h1 {
+    font-size: 5em;
+}
+
+.cover-content h3 {
+    font-size: 3em;
+}
 }
 
 @media only screen and (max-width: 700px) {
@@ -203,5 +217,16 @@ p {
 
     .img-block :nth-child(3) {
         display: inline;
+    }
+    .scroll-content li {
+        font-size: 1.5em;
+    }
+    
+    .cover-content h1 {
+        font-size: 3em;
+    }
+    
+    .cover-content h3 {
+        font-size: 1.5em;
     }
 }
