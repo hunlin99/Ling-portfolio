@@ -49,6 +49,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    height: 100vh;
 }
 
 .cover-container {
@@ -57,9 +58,10 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1em;
-    height: 90vh;
+    height: 100%;
     align-items: center;
 }
+
 
 .cover-container h1 {
     font-size: 3em;
@@ -180,64 +182,6 @@ p {
 }
 
 
-/*color scheme*/
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-    height: 7em;
-
-}
-
-.grid-container p {
-    text-align: center;
-}
-
-.color-scheme {
-    padding-bottom: 5%;
-}
-
-.color-container {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-}
-
-.primary-color-block,
-.secondary-color-block,
-.third-color-block,
-.fourth-color-block {
-    width: 6em;
-    height: 6em;
-    border: solid #344D66;
-}
-
-.primary-color-block {
-    background-color: #FBF0DF;
-    border-radius: 0 50% 0 50%;
-}
-
-.secondary-color-block {
-    background-color: white;
-    border-radius: 50% 0 50% 0;
-}
-
-.third-color-block {
-    background-color: #FFBCA3;
-    border-radius: 50% 0 50% 0;
-}
-
-.fourth-color-block {
-    background-color: #344D66;
-    border-radius: 0 50% 0 50%;
-}
-
-.color-scheme p {
-    font-size: 2em;
-}
-
 /*grid-system*/
 .grid-system {
     margin: auto 0;
@@ -263,40 +207,14 @@ p {
     color: #344D66;
 }
 
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .device-mockup {
-        height: 60vh;
-        margin-top: 10%;
-    }
-}
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
 
-    .device-mockup {
-        height: 50vh;
-        margin-top: 10%;
-    }
-
-    .device-mockup h1 {
-        font-size: 2.5em;
-    }
-
-    .device-mockup p {
-        font-size: 1.2em;
-    }
 
     img {
         object-fit: contain;
         width: 100%;
         height: 100%;
-    }
-
-    .screenshot-2 {
-        margin-top: 30%;
-    }
-
-    .screenshot-1 {
-        position: relative;
     }
 
     .back-btn {
@@ -310,6 +228,14 @@ p {
 @media only screen and (max-width: 750px) {
     .cover {
         padding-top: 0;
+        height: 70vh;
+    }
+
+    .cover-container {
+        padding-top: 10%;
+        grid-template-columns: 1fr;
+        gap: 0;
+        align-items: end;
     }
 
     .cover-container h1 {
@@ -326,13 +252,7 @@ p {
     }
 
     .grid-container p {
-        font-size: 1.5em;
-    }
-
-    .cover-container {
-        align-items: center;
-        height: 30vh;
-        padding-top: 10%;
+        font-size: 1em;
     }
 
     .improvements-container {
@@ -346,6 +266,5 @@ p {
     .personas-container {
         grid-template-columns: 1fr;
     }
-
 
 }

@@ -9,27 +9,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 .limelight-regular {
     font-family: "Limelight", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.body{
+
+.body {
     width: 100%;
     color: #344D66;
-    padding-top: 2vh; /*To cover padding-top: 10vh in style.css*/
+    padding-top: 0;
+    /*To cover padding-top: 10vh in style.css*/
 }
 
-#nav{
+#nav {
     margin-right: 5.25%;
 }
 
 /*header*/
-.back-btn{
+.back-btn {
     position: absolute;
     top: 0;
 }
-.back-btn a{
+
+.back-btn a {
     padding: 1em;
     display: flex;
     align-items: center;
@@ -38,52 +42,52 @@
 
 /*Cover section*/
 .cover {
-    width: 85%;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
     padding-bottom: 5%;
+    background-image: url(./coverimg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
 }
 
-.cover-container{
-display: grid;
-grid-template-columns: 2fr 1fr 1fr;
-gap: 1em;
+.cover-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1em;
+    height: 100%;
+    align-items: center;
 }
 
-.device-mockup{
-    width: 100%;
-    height: 70vh;
-    margin-top: 20%;
-}
-.device-mockup h1{
+.cover-container h1 {
     font-size: 3em;
-    padding: 0;
 }
-.device-mockup p{
+
+.cover-container p {
     font-size: 1.5em;
 }
 
-img{
-    object-fit: scale-down;
+img {
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
-.screenshot-2{
-    margin-top: 40%;
-}
-.screenshot-1{
-    position: relative;
-    top: -5%;
+
+.design {
+    width: 85%;
+    margin: auto;
+    padding: 5% 0;
 }
 
 /*Text*/
-h1{
+h1 {
     padding-top: 1em;
     font-size: 1.5em;
 }
-p{
+
+p {
     line-height: 1.5em;
 }
 
@@ -95,150 +99,198 @@ p{
 }
 
 .grid-system,
-.tools{
+.tools {
     background-color: #A7BDB4;
     width: 100vw;
     padding: 5% 10%;
 }
 
 /*Description section*/
-.description p{
+.description p {
     padding-top: 0.5em;
 }
 
-.grid-system{
+.grid-system {
     margin: auto 0;
 }
-.grid-content{
+
+.grid-content {
     position: absolute;
     display: flex;
 }
+
 /*color scheme*/
-.grid-container{
+.color-scheme {
+    background-color: #FDF5EB;
+    width: 100vw;
+    padding: 0 10%;
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
-    height: 7em;
-
+    padding: 0.5em 0;
 }
-.grid-container p{
+
+.grid-container p {
     text-align: center;
+    width: 100%;
 }
 
-.color-container{
+.color-container {
     display: flex;
     justify-content: center;
     gap: 1em;
+    width: 100%;
 }
+
 .primary-color-block,
 .secondary-color-block,
 .third-color-block,
-.fourth-color-block{
+.fourth-color-block {
     width: 6em;
     height: 6em;
     border: solid #A7BDB4;
 }
 
-.primary-color-block{
+.primary-color-block {
     background-color: #A7BDB4;
     border-radius: 0 50% 0 50%;
 }
-.secondary-color-block{
+
+.secondary-color-block {
     background-color: #FDF5EB;
-    border-radius:  50% 0 50% 0;
+    border-radius: 50% 0 50% 0;
 }
-.third-color-block{
+
+.third-color-block {
     background-color: #494A42;
     border-radius: 50% 0 50% 0;
 }
-.fourth-color-block{
+
+.fourth-color-block {
     background-color: #2A2B29;
     border-radius: 0 50% 0 50%;
 }
 
-.color-scheme p{
+.color-scheme p {
     font-size: 2em;
 }
 
 /*grid-system section*/
-.grid-system h1{
+.grid-system h1 {
     color: #FDF5EB;
 }
 
 /*tools section*/
-.tools h1{
+.tools h1 {
     color: #FDF5EB;
 }
-@media screen and (min-width: 1001px) and (max-width: 1200px){
-    .device-mockup{
-        height: 60vh;
-        margin-top: 10%;
-    }
-}
-@media screen and (min-width: 751px) and (max-width: 1000px) {
 
-    .device-mockup{
-        height: 60vh;
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+    .device-mockup {
+        height: 50vh;
         margin-top: 10%;
     }
-    .device-mockup h1{
+
+    .device-mockup h1 {
         font-size: 2.5em;
     }
-    .device-mockup p{
+
+    .device-mockup p {
         font-size: 1.2em;
     }
-    
-    img{
+
+    img {
         object-fit: contain;
         width: 100%;
         height: 100%;
     }
-    .screenshot-2{
+
+    .screenshot-2 {
         margin-top: 30%;
     }
-    .screenshot-1{
+
+    .screenshot-1 {
         position: relative;
-    }    
-}
-iframe{
-    width: 100%;
-    height: 100vh;
+    }
+
+    .back-btn {
+        width: 30%;
+    }
+
 }
 
-@media only screen and (max-width: 750px){
+
+
+@media only screen and (max-width: 750px) {
     .cover {
         padding-top: 0;
+        height: 70vh;
     }
-    .device-mockup h1{
+
+    .cover-container {
+        padding-top: 10%;
+        grid-template-columns: 1fr;
+        gap: 0;
+        align-items: end;
+    }
+
+    .cover-container img {
+        order: 2;
+    }
+
+    .cover-content {
+        order: 1;
+    }
+
+    .cover-container h1 {
         font-size: 2em;
         padding: 0;
     }
-    .device-mockup p{
+
+    .cover-container p {
         font-size: 1.2em;
     }
-    .features-container{
+
+    .features-container {
         grid-template-columns: 1fr;
     }
-    .grid-container p{
-        font-size: 1.5em;
-    }
-    .screenshot-2{
-       display: none;
-    }
-    .screenshot-1{
-        display: none;
-    }   
-    .cover-container{
-        display: inline;
+
+    .grid-container p {
+        font-size: 1em;
     }
 
-    .device-mockup{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        height: 50vh;
-        margin: 0;
-        gap: 1em;
+    .improvements-container {
+        grid-template-columns: 1fr;
     }
+
+    .back-btn {
+        width: 40%;
+    }
+
+    .personas-container {
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    .primary-color-block,
+    .secondary-color-block,
+    .third-color-block,
+    .fourth-color-block {
+        width: 4em;
+        height: 4em;
+    }
+
 }
