@@ -71,6 +71,10 @@
     font-size: 1.5em;
 }
 
+.external-link {
+    padding: 2% 0;
+}
+
 img {
     object-fit: contain;
     width: 100%;
@@ -221,6 +225,13 @@ p {
         width: 30%;
     }
 
+    .external-link {
+        padding: 2% 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+
 }
 
 
@@ -236,6 +247,8 @@ p {
         grid-template-columns: 1fr;
         gap: 0;
         align-items: end;
+        justify-content: center;
+        text-align: center;
     }
 
     .cover-container h1 {

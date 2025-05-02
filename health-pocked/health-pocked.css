@@ -178,6 +178,7 @@
 .prototype img {
     object-fit: scale-down;
     width: 100%;
+    padding-top: 3%;
 }
 
 /*component*/
