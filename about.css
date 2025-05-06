@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: "Roboto", sans-serif;
 }
 
 .back-color {
@@ -22,8 +23,32 @@ body {
     height: 55px;
     background-color: var(--nav-bg-color);
     border-radius: 0 0 0 15rem;
-    clip-path: path('M 0 0 L 100% 0 L 100% 100% Q 0 100% 0 0'); /* Smooth curve matching border-radius */
+    clip-path: path('M 0 0 L 100% 0 L 100% 100% Q 0 100% 0 0');
+    /* Smooth curve matching border-radius */
 }
+
+/*font-size*/
+h1 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 1em;
+}
+
+li {
+    font-size: 1em;
+}
+
+
 
 /*content section*/
 .intro {
@@ -42,14 +67,15 @@ body {
     border-radius: 50%;
     margin: auto;
 }
-.profile-picture img{
+
+.profile-picture img {
     object-fit: cover;
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.about-content{
+.about-content {
     line-height: 2em;
 }
 
@@ -61,49 +87,54 @@ body {
 }
 
 .skill-block {
-    background-color: rgb(255, 255, 255,0.6);
+    background-color: rgb(255, 255, 255, 0.6);
     height: 20em;
     border-radius: 1rem;
     padding: 1em;
     color: var(--text-color);
 }
-.skill-block div{
+
+.skill-block div {
     padding: 1em;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.skill-block div label{
+
+.skill-block div label {
     width: 30%;
     padding-right: 1em;
 }
 
-progress{
+progress {
     width: 60%;
     padding-left: 1em;
 }
+
 progress[value] {
-    -webkit-appearance:none;
-    -moz-appearance:none;        
+    -webkit-appearance: none;
+    -moz-appearance: none;
     appearance: none;
-  }
+}
 
 progress::-webkit-progress-bar {
-    background-color:white;
+    background-color: white;
     border-radius: 1em;
     border: solid var(--text-color);
 }
+
 progress::-webkit-progress-value {
     background-color: var(--text-color);
     border-radius: 1em;
     opacity: 0.7;
 }
 
-.skill-title{
+.skill-title {
     text-align: center;
     padding: 1em;
 }
-.background{
+
+.background {
     padding: 2em;
 }
 
@@ -119,6 +150,7 @@ progress::-webkit-progress-value {
     grid-column-end: 5;
     line-height: 2em;
 }
+
 .bg-content p {
     display: none;
 }
@@ -127,10 +159,29 @@ progress::-webkit-progress-value {
     padding-left: 2em;
 }
 
-.vertical-line {
-    width: 20px;
-    height: 100%;
-    border-left: solid var(--text-color);
+
+@media screen and (min-width: 1600px) {
+
+    /*font-size*/
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+
+    h5 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    li {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (min-width: 651px) and (max-width: 1000px) {
@@ -139,35 +190,55 @@ progress::-webkit-progress-value {
         width: 15rem;
     }
 }
-@media only screen and (max-width: 700px){
-    .profile-picture{
-        height: 12rem;
-        width: 12rem;
+
+@media only screen and (max-width: 700px) {
+    .profile-picture {
+        height: 25rem;
+        width: 100%;
+        border-radius: 1rem;
+
     }
+    .profile-picture img {
+        border-radius: 1rem;
+    }
+
     .intro {
         padding: 1em 0;
+        grid-template-columns: 1fr;
     }
+
+
     .skill-block-holder {
         display: grid;
         grid-template-columns: 1fr;
         gap: 2em;
         padding: 1em 0;
-        
+
     }
+
     .bg-content p {
         display: inline;
     }
-    .time-line{
+
+    .time-line p {
         display: none;
     }
-    .background{
+
+    .background {
         padding: 1em 0;
     }
+
     .background-holder {
         padding: 1em;
         grid-template-columns: 1fr;
+        gap: 1em;
     }
+
     .bg-content {
         grid-column: auto;
+    }
+
+    section h1{
+        padding-top: 2em;
     }
 }

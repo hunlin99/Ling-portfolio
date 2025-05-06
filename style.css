@@ -6,16 +6,16 @@
 }
 
 /*font style*/
-.pattaya {
-  font-family: "Pattaya", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+/*  <weight>: Use a value from 100 to 900
+    <uniquifier>: Use a unique and descriptive class name*/
 
-.fascinate {
-  font-family: "Fascinate Inline", system-ui;
-  font-weight: 400;
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
   font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 .limelight-regular {
@@ -176,6 +176,8 @@ nav a :hover {
 
 .menu-container {
   width: 25%;
+  font-family: "Limelight", sans-serif;
+
 }
 
 .menu-container a {

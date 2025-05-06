@@ -142,6 +142,19 @@ p {
     height: 15vh;
     background-color: var(--text-color);
 }
+@media screen and (min-width: 1600px) {
+    .scroll-content li {
+        font-size: 3em;
+    }
+    
+    .cover-content h1 {
+        font-size: 7em;
+    }
+    
+    .cover-content h3 {
+        font-size: 3.5em;
+    }
+}
 
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
