@@ -47,7 +47,8 @@ body {
 .webDesign,
 .UID,
 .industrialDesign,
-.creativeProduct {
+.creativeProduct,
+.APP {
     padding: 3%;
     color: var(--text-color);
 }

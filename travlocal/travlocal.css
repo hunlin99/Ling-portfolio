@@ -44,7 +44,7 @@
 /*Cover section*/
 .cover {
     padding-bottom: 5%;
-    background-image: url(./coverimg-1.jpg);
+    background-image: url(./traclocal-coverimg.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -87,7 +87,6 @@ img {
 }
 
 /*Text*/
-/*Text*/
 h1 {
     padding-top: 1em;
     font-size: 2rem
@@ -101,6 +100,12 @@ p {
     font-weight: 300;
 }
 
+h3 {
+ font-size: 1.5rem;
+ padding : 0.5em 0;
+}
+
+
 /*Background-color*/
 .description,
 .color-scheme {
@@ -110,7 +115,7 @@ p {
     padding-top: 5%;
 }
 
-.grid-system,
+.design-system,
 .improvements {
     background-color: #344D66;
     width: 100vw;
@@ -126,7 +131,7 @@ p {
 /*features-container*/
 .features-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
     padding: 1em 0;
 }
@@ -186,9 +191,9 @@ p {
     z-index: 999;
 }
 
-.user-journey {
+.logo-design,
+.ui-design {
     padding: 2em 0;
-    border-radius: 1.5rem;
 }
 
 
@@ -205,7 +210,7 @@ p {
 /*improvements*/
 .improvements-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     padding-top: 2%;
 }
@@ -215,6 +220,14 @@ p {
     border-radius: 1rem;
     padding: 2em;
     color: #344D66;
+    display: flex;
+    align-items: center;
+}
+
+.improvements-block img {
+    width: 30%;
+    border-radius: 50%;
+    margin-right: 1em;
 }
 
 
