@@ -24,6 +24,32 @@
   font-style: normal;
 }
 
+/*font-size*/
+h1 {
+  font-size: 1.8em;
+  padding-top: 1em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 180%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+}
+
+li {
+  font-size: 1em;
+}
+
 /*Google icon*/
 .material-symbols-outlined {
   font-variation-settings:
@@ -135,12 +161,13 @@ nav a :hover {
 }
 
 /*detail page header*/
-.back-btn{
+.back-btn {
   position: absolute;
   top: 0;
   height: auto;
 }
-.back-btn a{
+
+.back-btn a {
   padding: 1em;
   display: flex;
   align-items: center;
@@ -328,5 +355,29 @@ nav a :hover {
   .nav,
   .back-color {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+
+  /*font-size*/
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h5 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+
+  li {
+    font-size: 1.2em;
   }
 }

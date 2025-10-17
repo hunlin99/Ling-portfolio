@@ -27,6 +27,13 @@
     margin-right: 5.25%;
 }
 
+
+.design, .cover-container, .description-container, .grid-system-container, .improvements-container{
+    max-width: 1200px;
+    margin: auto;
+    width: 85%;
+}
+
 /*header*/
 .back-btn {
     position: absolute;
@@ -53,8 +60,6 @@
 }
 
 .cover-container {
-    width: 85%;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1em;
@@ -81,25 +86,6 @@ img {
     height: 100%;
 }
 
-.design {
-    width: 85%;
-    margin: auto;
-}
-
-/*Text*/
-/*Text*/
-h1 {
-    padding-top: 1em;
-    font-size: 2rem
-}
-
-p {
-    line-height: 180%;
-    font-size: 1rem;
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-}
 
 /*Background-color*/
 .description,
@@ -203,7 +189,7 @@ p {
 }
 
 /*improvements*/
-.improvements-container {
+.improvements-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1em;
@@ -274,7 +260,7 @@ p {
         font-size: 1em;
     }
 
-    .improvements-container {
+    .improvements-grid-container {
         grid-template-columns: 1fr;
     }
 

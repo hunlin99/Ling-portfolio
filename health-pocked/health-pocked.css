@@ -15,11 +15,26 @@
     width: 100%;
 }
 
+img {
+    object-fit: cover;
+    width: 100%;
+    padding-top: 3%;
+}
+
 #nav {
     margin-right: 5.25%;
 }
 
-
+.cover-container,
+.prototype-container,
+.design-system-container,
+.description-container,
+.component-container,
+.mockup-container {
+    max-width: 1200px;
+    margin: auto;
+    width: 85%;
+}
 
 
 /*Text*/
@@ -61,12 +76,7 @@
     background-position: center;
     background-attachment: fixed;
 }
-.app-positioning{
-    padding-top: 5%;
-}
-.app-positioning p{
-    padding: 1% 0;
-}
+
 
 /*description section*/
 .description {
@@ -78,7 +88,8 @@
 .description h1 {
     padding-top: 1em;
 }
-.description p{
+
+.description p {
     padding: 1em;
 }
 
@@ -104,9 +115,7 @@
 }
 
 /*Design system section*/
-.design-system {
-    width: 80%;
-    margin: auto;
+.design-system-container {
     padding: 5% 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -115,6 +124,7 @@
 .logo {
     width: 100%;
 }
+
 .logo img {
     object-fit: scale-down;
     width: 100%;
@@ -168,85 +178,86 @@
     background-color: #e6b087;
 }
 
-/*prototype*/
-.prototype {
-    width: 80%;
-    margin: auto;
-    padding: 5% 0;
-}
-
-.prototype img {
-    object-fit: scale-down;
-    width: 100%;
-    padding-top: 3%;
-}
 
 /*component*/
-.component{
+.component {
     background-color: #D9F2E2;
 }
-.component-container{
-    width: 80%;
-    margin: auto;
+
+.component-container {
     display: flex;
-    padding: 5% 0;
+    padding-top: 5%;
     gap: 10%;
 }
 
-.component h1{
+.component h1 {
     padding-top: 1em;
 }
-.component img{
+
+.component img {
     object-fit: scale-down;
     width: 100%;
     padding-top: 1em;
     margin-top: 1em;
 }
 
-.nav-ui img{
+.nav-ui img {
     background-color: white;
     padding: 5%;
     border-radius: 1rem;
 }
 
+/*mockup section*/
+.mockup{
+    padding-top: 5%;
+}
 
 
 @media screen and (min-width: 651px) and (max-width: 1000px) {
     .cover-container {
-        grid-template-columns:2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
-    .device-mockup{
+
+    .device-mockup {
         display: none;
     }
 }
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .cover-container {
-        grid-template-columns:2fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
-    .device-mockup{
+
+    .device-mockup {
         display: none;
     }
-    .app-positioning{
+
+    .app-positioning {
         display: none;
     }
-    .cover-content hr{
+
+    .cover-content hr {
         display: none;
     }
-    .component-container{
+
+    .component-container {
         flex-direction: column;
         gap: 2em;
     }
-    .btn-ui h1{
+
+    .btn-ui h1 {
         padding-top: 2em;
     }
-    .persona{
+
+    .persona {
         flex-direction: column;
         gap: 2em;
     }
+
     .persona p {
         padding: 0;
     }
+
     .persona-block img {
         padding: 2% 0;
     }

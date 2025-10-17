@@ -27,6 +27,13 @@
     margin-right: 5.25%;
 }
 
+
+.cover-container, .design, .description-container, .design-system-container, .team-member-container{
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+}
+
 /*header*/
 .back-btn {
     position: absolute;
@@ -53,8 +60,6 @@
 }
 
 .cover-container {
-    width: 85%;
-    margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 1em;
@@ -79,11 +84,6 @@ img {
     object-fit: contain;
     width: 100%;
     height: 100%;
-}
-
-.design {
-    width: 85%;
-    margin: auto;
 }
 
 /*Text*/
@@ -116,7 +116,7 @@ h3 {
 }
 
 .design-system,
-.improvements {
+.team-member {
     background-color: #344D66;
     width: 100vw;
     padding: 3% 10%;
@@ -208,14 +208,14 @@ h3 {
 }
 
 /*improvements*/
-.improvements-container {
+.team-grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
     padding-top: 2%;
 }
 
-.improvements-block {
+.member-block {
     background-color: white;
     border-radius: 1rem;
     padding: 2em;
@@ -224,7 +224,7 @@ h3 {
     align-items: center;
 }
 
-.improvements-block img {
+.member-block img {
     width: 30%;
     border-radius: 50%;
     margin-right: 1em;

@@ -51,6 +51,7 @@
 h3,
 p {
     text-shadow: 1.5px 1.5px 0px white;
+    padding-top: 0;
 }
 
 .note {

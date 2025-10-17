@@ -27,6 +27,12 @@
     margin-right: 5.25%;
 }
 
+.cover-container, .design, .description-container, .color-scheme-container, .grid-system-container, prototype-container{
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+}
+
 /*header*/
 .back-btn {
     position: absolute;
@@ -52,13 +58,12 @@
 }
 
 .cover-container {
-    width: 85%;
-    margin: auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1em;
     height: 100%;
     align-items: center;
+    padding-top: 5%
 }
 
 .cover-container h1 {
@@ -83,16 +88,6 @@ img {
     width: 85%;
     margin: auto;
     padding: 5% 0;
-}
-
-/*Text*/
-h1 {
-    padding-top: 1em;
-    font-size: 1.5em;
-}
-
-p {
-    line-height: 1.5em;
 }
 
 /*Background-color*/
