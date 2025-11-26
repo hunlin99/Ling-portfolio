@@ -62,6 +62,10 @@ main{
     line-height: 2em;
 }
 
+.about-content a{
+    margin-right: 1em;
+}
+
 .skill-block-holder {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -140,6 +144,18 @@ progress::-webkit-progress-value {
 
 .bg-content ul {
     padding-left: 2em;
+}
+
+.download-file{
+    background-color: var(--footer-color-light);
+    color: var(--text-color);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    border: solid var(--text-color);
+}
+
+.download-file:hover{
+    background-color: var(--nav-bg-color);
 }
 
 
