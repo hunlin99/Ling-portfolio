@@ -1,5 +1,5 @@
 :root {
-    --text-color: #596774;
+    --text-color: #ffffff;
     --footer-color-light: #D7FAFF;
     --footer-color-dark: #0074E1;
 }
@@ -28,7 +28,7 @@
 }
 
 
-.cover-container, .design, .description-container, .design-system-container, .team-member-container{
+.cover-container, .design, .description-container, .design-system-container, .team-member-container, .progress-container{
     width: 85%;
     margin: auto;
     max-width: 1200px;
@@ -39,6 +39,7 @@
     position: absolute;
     top: 0;
     width: 25%;
+    color: #ffffff;
 }
 
 .back-btn a {
@@ -51,7 +52,7 @@
 /*Cover section*/
 .cover {
     padding-bottom: 5%;
-    background-image: url(./traclocal-coverimg.jpg);
+    background-image: url(./dc3-viral-menace-cover-img.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,6 +68,9 @@
     align-items: center;
 }
 
+.cover-content{
+    color: var(--text-color);
+}
 
 .cover-container h1 {
     font-size: 3em;
@@ -92,7 +96,7 @@ h1 {
     font-size: 2rem
 }
 
-p {
+p,li {
     line-height: 180%;
     font-size: 1rem;
     font-family: "Roboto", sans-serif;
@@ -100,15 +104,24 @@ p {
     font-weight: 300;
 }
 
+ul{
+    padding-left: 1em;
+}
+
 h3 {
  font-size: 1.5rem;
+ padding : 0.5em 0;
+}
+
+h4{
+ font-size: 1.2rem;
  padding : 0.5em 0;
 }
 
 
 /*Background-color*/
 .description,
-.color-scheme {
+.color-scheme, .progress {
     background-color: #FDF5EB;
     width: 100vw;
     padding: 0 10%;
@@ -128,15 +141,15 @@ h3 {
     padding-top: 0.5em;
 }
 
-/*features-container*/
-.features-container {
+/*progress-container*/
+.progress-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1em;
     padding: 1em 0;
 }
 
-.features-block {
+.progress-block {
     padding: 2em;
     background-color: white;
     border-radius: 1.5rem;
@@ -191,7 +204,7 @@ h3 {
     z-index: 999;
 }
 
-.logo-design,
+.showcase-img,
 .ui-design {
     padding: 2em 0;
 }
@@ -207,30 +220,18 @@ h3 {
     padding-top: 2%;
 }
 
-/*improvements*/
-.team-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    padding-top: 2%;
+/*screen record*/
+video {
+    width: 100%;
+    height: auto;
+    padding: 8% 12%;
 }
-
-.member-block {
-    background-color: white;
-    border-radius: 1rem;
-    padding: 2em;
-    color: #344D66;
-    display: flex;
-    align-items: center;
+.screen-vedio-container{
+    background-image: url(./laptop-mockup.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-
-.member-block img {
-    width: 30%;
-    border-radius: 50%;
-    margin-right: 1em;
-    object-fit: cover;
-}
-
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
 
@@ -300,7 +301,7 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    .team-grid-container {
+    .progress-grid {
     grid-template-columns: 1fr;
 }
 

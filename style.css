@@ -60,7 +60,7 @@ li {
 }
 
 /*Bg-video in home and contact*/
-video {
+.home video, .contact video {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
