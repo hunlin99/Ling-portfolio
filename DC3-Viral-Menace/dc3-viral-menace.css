@@ -82,6 +82,7 @@
 
 .external-link {
     padding: 2% 0;
+    color: #FED001;
 }
 
 img {
@@ -231,6 +232,78 @@ video {
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+
+/*Website link btn*/
+/*Project detail button*/
+button {
+    all: unset;
+    cursor: pointer;
+    position: relative;
+    width: 13rem;
+    height: 3rem;
+}
+
+.learn-more {
+    position: relative;
+    display: inline-block;
+}
+
+.circle {
+    position: relative;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 1.625rem;
+    transition: width 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    overflow: hidden;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #274A5D;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease;
+}
+
+.icon-arrow {
+    opacity: 0;
+}
+
+.button-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 3.5rem;
+    padding: 0.75rem 0;
+    color: var(--text-color);
+    text-align: left;
+    line-height: 1.6;
+    transition: color 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    font-family: "Limelight", sans-serif;
+}
+
+.learn-more:hover .circle {
+    width: 100%;
+}
+
+.learn-more:hover .icon-link {
+    opacity: 0;
+}
+
+.learn-more:hover .icon-arrow {
+    opacity: 1;
+}
+
+.learn-more:hover .button-text {
+    display: none;
 }
 
 @media screen and (min-width: 750px) and (max-width: 1000px) {
